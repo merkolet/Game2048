@@ -121,7 +121,7 @@ class _WelcomeCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(26),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.24),
+            color: Colors.black.withValues(alpha:0.24),
             blurRadius: 18,
             offset: const Offset(0, 8),
           ),
@@ -204,7 +204,7 @@ class _Logo extends StatelessWidget {
             borderRadius: BorderRadius.circular(28),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFFEDC22E).withOpacity(0.4),
+                color: const Color(0xFFEDC22E).withValues(alpha:0.4),
                 blurRadius: 24,
                 offset: const Offset(0, 8),
               ),
@@ -278,7 +278,7 @@ class _HomeButton extends StatelessWidget {
           boxShadow: primary
               ? [
                   BoxShadow(
-                    color: const Color(0xFFEDC22E).withOpacity(0.3),
+                    color: const Color(0xFFEDC22E).withValues(alpha:0.3),
                     blurRadius: 16,
                     offset: const Offset(0, 4),
                   )

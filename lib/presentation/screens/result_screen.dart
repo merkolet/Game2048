@@ -83,7 +83,7 @@ class _ResultHeader extends StatelessWidget {
         boxShadow: win
             ? [
                 BoxShadow(
-                  color: const Color(0xFFEDC22E).withOpacity(0.35),
+                  color: const Color(0xFFEDC22E).withValues(alpha:0.35),
                   blurRadius: 20,
                   offset: const Offset(0, 8),
                 ),
@@ -114,7 +114,7 @@ class _ResultHeader extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               color: win
-                  ? Colors.white.withOpacity(0.85)
+                  ? Colors.white.withValues(alpha:0.85)
                   : const Color(0xFF776E65),
             ),
           ),
@@ -205,9 +205,9 @@ class _StatTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 10),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.08),
+        color: color.withValues(alpha:0.08),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: color.withOpacity(0.2)),
+        border: Border.all(color: color.withValues(alpha:0.2)),
       ),
       child: Column(
         children: [
@@ -297,12 +297,12 @@ class _MissionRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
         color: done
-            ? const Color(0xFF2E7D32).withOpacity(0.15)
+            ? const Color(0xFF2E7D32).withValues(alpha:0.15)
             : const Color(0xFF2A2A4A),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: done
-              ? const Color(0xFF4CAF50).withOpacity(0.5)
+              ? const Color(0xFF4CAF50).withValues(alpha:0.5)
               : const Color(0xFF3A3A5A),
         ),
       ),
@@ -367,7 +367,7 @@ class _ActionButton extends StatelessWidget {
           boxShadow: primary
               ? [
                   BoxShadow(
-                    color: const Color(0xFFEDC22E).withOpacity(0.3),
+                    color: const Color(0xFFEDC22E).withValues(alpha:0.3),
                     blurRadius: 16,
                     offset: const Offset(0, 4),
                   ),

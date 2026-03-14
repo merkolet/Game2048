@@ -115,7 +115,7 @@ class _SectionCard extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFEDC22E).withOpacity(0.12),
+                    color: const Color(0xFFEDC22E).withValues(alpha:0.12),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
@@ -236,9 +236,9 @@ class _PodiumItem extends StatelessWidget {
       height: baseHeight,
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.08),
+        color: color.withValues(alpha:0.08),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: color.withOpacity(0.35), width: 1.5),
+        border: Border.all(color: color.withValues(alpha:0.35), width: 1.5),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

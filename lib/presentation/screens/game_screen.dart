@@ -194,23 +194,27 @@ class _GameScreenState extends State<GameScreen> {
                           if (mounted) setState(() {});
                         },
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 8),
                       _MissionsBar(missions: _service.missions),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 8),
                       Expanded(
-                        child: TileGrid(state: _service.state),
-                      ),
-                      const SizedBox(height: 12),
-                      const Center(
-                        child: Text(
-                          'Свайпай для перемещения плиток',
-                          style: TextStyle(
-                            color: Color(0xFF776E65),
-                            fontSize: 12,
-                          ),
+                        child: Column(
+                          children: [
+                            Expanded(child: TileGrid(state: _service.state)),
+                            const Padding(
+                              padding: EdgeInsets.only(top: 8),
+                              child: Text(
+                                'Свайпай для перемещения плиток',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF776E65),
+                                  fontSize: 11,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(height: 8),
                     ],
                   ),
                 ),
@@ -379,7 +383,7 @@ class _MiniMission extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
       decoration: BoxDecoration(
         color: done
-            ? const Color(0xFF2E7D32).withOpacity(0.85)
+            ? const Color(0xFF2E7D32).withValues(alpha: 0.85)
             : const Color(0xFF2A2A4A),
         borderRadius: BorderRadius.circular(8),
         border: Border.all(

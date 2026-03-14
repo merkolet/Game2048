@@ -233,9 +233,9 @@ class _BestScoreTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.08),
+        color: color.withValues(alpha:0.08),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: color.withOpacity(0.2)),
+        border: Border.all(color: color.withValues(alpha:0.2)),
       ),
       child: Column(
         children: [
@@ -282,9 +282,9 @@ class _StatTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.08),
+        color: color.withValues(alpha:0.08),
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: color.withOpacity(0.2)),
+        border: Border.all(color: color.withValues(alpha:0.2)),
       ),
       child: Column(
         children: [
@@ -333,11 +333,11 @@ class _MissionTile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       decoration: BoxDecoration(
         color: done
-            ? const Color(0xFF2E7D32).withOpacity(0.12)
+            ? const Color(0xFF2E7D32).withValues(alpha:0.12)
             : const Color(0xFF2A2A4A),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
-          color: done ? doneColor.withOpacity(0.4) : const Color(0xFF3A3A5A),
+          color: done ? doneColor.withValues(alpha:0.4) : const Color(0xFF3A3A5A),
         ),
       ),
       child: Row(
@@ -347,8 +347,8 @@ class _MissionTile extends StatelessWidget {
             height: 36,
             decoration: BoxDecoration(
               color: done
-                  ? doneColor.withOpacity(0.15)
-                  : undoneColor.withOpacity(0.1),
+                  ? doneColor.withValues(alpha:0.15)
+                  : undoneColor.withValues(alpha:0.1),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(
@@ -387,7 +387,7 @@ class _MissionTile extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
-                color: doneColor.withOpacity(0.15),
+                color: doneColor.withValues(alpha:0.15),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Text(

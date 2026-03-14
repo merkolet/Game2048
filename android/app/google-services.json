@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559679206408",
+    "project_id": "game2048-9e98c",
+    "storage_bucket": "game2048-9e98c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559679206408:android:f42ec7f5d4cef890ac4dbd",
+        "android_client_info": {
+          "package_name": "com.example.game_2048"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbu8foBYbrD0ioB9yqIIyg90YACDYxMck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
